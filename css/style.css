@@ -6,4 +6,70 @@
   box-sizing: border-box;
 }
 
-/* Continuar digitação código CSS (deste ponto) */
+/* Trabalhando com variáveis de CSS (Para as cores) */
+:root {
+  --cor-primaria:#f90030;
+  --cor-secundaria:#a259f7;
+  --cor-destaque:#ffaf00;
+  --fundo-escuro: #080324;
+  --texto-claro: #fff;
+  --texto-cinza:#c7bab3;
+}
+
+/* Estilos Gerais */
+body {
+  background-color: var(--fundo-escuro);
+  color:var(--texto-claro);
+  font-family: 'bebas Neue', sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  background-color: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.header {
+  background-color: var(--cor-primaria);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding: 0.5rem 0;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--texto-claro);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--cor-destaque);
+}
